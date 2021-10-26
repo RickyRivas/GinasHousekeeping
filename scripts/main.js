@@ -52,3 +52,21 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+var swiper = new Swiper(".testSwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

@@ -1303,6 +1303,7 @@ body.dark-mode .theme-toggle {
   }
   #gallery {
     width: 100vw;
+    background-color: white;
   }
   #gallery .container {
     width: 100vw;
@@ -1381,6 +1382,163 @@ body.dark-mode .theme-toggle {
   }
   #gallery .container .mySwiper .swiper-pagination {
     bottom: 0;
+  }
+  #testimonials {
+    width: 100%;
+    background-color: #e9ecef;
+  }
+  #testimonials .container {
+    width: 100vw;
+    max-width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  #testimonials .container .heading {
+    width: 100%;
+  }
+  #testimonials .container .heading h2 {
+    margin-bottom: 0.5rem;
+  }
+  #testimonials .container .heading p {
+    margin-bottom: 2rem;
+  }
+  #testimonials .container .testSwiper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 400px;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper {
+    width: 100%;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide blockquote {
+    margin-bottom: 1rem;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide blockquote:before {
+    color: #2d2d2d;
+    content: open-quote;
+    font-size: 2rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide blockquote:after {
+    color: #2d2d2d;
+    content: close-quote;
+    font-size: 2rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide .stars {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1rem;
+  }
+  #testimonials .container .testSwiper .swiper-wrapper .swiper-slide .stars img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #testimonials .container .testSwiper .swiper-pagination {
+    bottom: 0;
+  }
+  #question {
+    padding: 2rem;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img3.jpg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img3.jpg) center/cover;
+  }
+  #question .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
   }
 }
 
