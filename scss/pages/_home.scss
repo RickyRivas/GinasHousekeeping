@@ -338,20 +338,31 @@
 
         .container {
             width: 100vw;
-            height: 500px;
             max-width: 1200px;
             margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: $padding-lg $padding-md;
+            .heading {
+                width: 100%;
+                h2 {
+                    margin-bottom: $margin-sm;
+                }
+                p {
+                    margin-bottom: $margin-lg;
+                }
+            }
 
-            .swiper-gallery {
-                width: 100vw;
+            .mySwiper {
+                width: 100%;
+                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                height: 500px;
 
                 .swiper-wrapper {
                     width: 100%;
@@ -362,7 +373,19 @@
                         background: $gray-300;
                         width: 100%;
                         height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
+                }
+                .swiper-pagination {
+                    bottom: 0;
                 }
             }
         }
