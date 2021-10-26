@@ -1303,7 +1303,7 @@ body.dark-mode .theme-toggle {
   }
   #gallery {
     width: 100vw;
-    background-color: white;
+    background-color: #f8f9fa;
   }
   #gallery .container {
     width: 100vw;
@@ -1385,7 +1385,6 @@ body.dark-mode .theme-toggle {
   }
   #testimonials {
     width: 100%;
-    background-color: #e9ecef;
   }
   #testimonials .container {
     width: 100vw;
@@ -1505,6 +1504,10 @@ body.dark-mode .theme-toggle {
   }
   #testimonials .container .testSwiper .swiper-pagination {
     bottom: 0;
+    color: #52b6bc;
+  }
+  #testimonials .container .testSwiper .swiper-pagination-current {
+    font-size: 1.25rem;
   }
   #question {
     padding: 2rem;

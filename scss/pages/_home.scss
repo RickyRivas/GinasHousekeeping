@@ -335,7 +335,9 @@
 
     #gallery {
         width: 100vw;
-        background-color: white;
+        background-color: $gray-100;
+
+
 
         .container {
             width: 100vw;
@@ -399,7 +401,6 @@
 
     #testimonials {
         width: 100%;
-        background-color: $gray-200;
 
         .container {
             width: 100vw;
@@ -487,6 +488,10 @@
 
                 .swiper-pagination {
                     bottom: 0;
+                    color: $teal;
+                }
+                .swiper-pagination-current {
+                    font-size: $font-size-lg;
                 }
             }
         }
