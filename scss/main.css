@@ -1,8 +1,10 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -941,12 +943,13 @@ body.dark-mode .theme-toggle {
   #landing .container h1 {
     color: white;
     margin-bottom: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
   #landing .container p {
     color: white;
     text-align: center;
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
   #landing .container .btns {
     display: -webkit-box;
@@ -1050,6 +1053,15 @@ body.dark-mode .theme-toggle {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #e9ecef;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
   }
   #intro {
     width: 100%;
@@ -1065,6 +1077,7 @@ body.dark-mode .theme-toggle {
     -ms-grid-rows: max-content max-content;
         grid-template-rows: -webkit-max-content -webkit-max-content;
         grid-template-rows: max-content max-content;
+    grid-gap: 1rem;
   }
   #intro .container .content {
     display: -webkit-box;
@@ -1086,6 +1099,7 @@ body.dark-mode .theme-toggle {
   }
   #intro .container .content h2 {
     margin-bottom: 0.5rem;
+    font-size: 1.75rem;
   }
   #intro .container .content p {
     line-height: 1.5;

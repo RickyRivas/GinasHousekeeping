@@ -19,13 +19,14 @@
             h1 {
                 color: white;
                 margin-bottom: $margin-sm;
-                font-size: $font-size-lg;
+                font-size: $font-size-lg * 1.4;
             }
 
             p {
                 color: white;
                 text-align: center;
                 margin-bottom: $margin-md;
+                font-size: $font-size-base;
             }
 
             .btns {
@@ -101,6 +102,15 @@
                     width: 100%;
                     padding: $padding-sm;
                     border: 1px solid $gray-200;
+                    // A reset of styles, including removing the default dropdown arrow
+                    appearance: none;
+                    // Additional resets for further consistency
+                    margin: 0;
+                    width: 100%;
+                    font-family: inherit;
+                    font-size: inherit;
+                    cursor: inherit;
+                    line-height: inherit;
                 }
             }
         }
@@ -117,6 +127,7 @@
             padding: $padding-lg $padding-md;
             display: grid;
             grid-template-rows: max-content max-content;
+            grid-gap: 1rem;
 
             .content {
                 display: flex;
@@ -130,6 +141,7 @@
 
                 h2 {
                     margin-bottom: $margin-sm;
+                    font-size: $font-size-lg * 1.4;
                 }
 
                 p {
