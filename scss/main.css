@@ -437,6 +437,11 @@ html, body {
     margin-top: 0em;
     border-bottom: none;
   }
+  header nav .nav-links li:nth-child(5) {
+    white-space: nowrap;
+    background-color: #2d2d2d;
+    padding: 0.5rem;
+  }
   header nav .nav-links.is-active {
     -webkit-transform: translate(0%);
             transform: translate(0%);
@@ -569,6 +574,11 @@ html, body {
   }
   header nav .nav-links li:nth-child(1) {
     margin-top: 0em;
+  }
+  header nav .nav-links li:nth-child(5) {
+    white-space: nowrap;
+    background-color: #2d2d2d;
+    padding: 0.5rem;
   }
   header nav .nav-links.is-active {
     -webkit-transform: translate(0%);
@@ -1000,6 +1010,7 @@ body.dark-mode .theme-toggle {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
+    background-color: #f8f9fa;
   }
   #form-container form {
     display: -webkit-box;
@@ -2204,6 +2215,86 @@ body.dark-mode .theme-toggle {
 }
 
 @media (min-width: 1200px) {
+  #landing {
+    height: 700px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/assets/img2.jpeg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img2.jpeg) center/cover;
+  }
+  #landing .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+  }
+  #landing .container h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+  }
+  #landing .container p {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  #landing .container .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  #landing .container .btns a {
+    width: 100%;
+    max-width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing .container .btns .phone {
+    position: relative;
+  }
+  #landing .container .btns .phone img {
+    position: absolute;
+    width: 1rem;
+    right: 1rem;
+  }
   #intro {
     width: 100%;
     background-color: #f8f9fa;
@@ -2390,6 +2481,67 @@ body.dark-mode .theme-toggle {
   }
   #services .container .services-grid .item a {
     margin: 0;
+  }
+  #slogan {
+    width: 100%;
+    background-color: #2d2d2d;
+  }
+  #slogan .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+    -webkit-transform: unset;
+            transform: unset;
+    position: relative;
+  }
+  #slogan .container .img-container {
+    width: 100%;
+    max-width: 400px;
+    height: 50%;
+    margin-bottom: 4rem;
+    border: 10px solid white;
+    z-index: 2;
+    margin-top: -100px;
+  }
+  #slogan .container .img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #slogan .container h2 {
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 2.5rem;
+    z-index: 2;
+    margin-left: 1rem;
+    white-space: inherit;
+  }
+  #slogan .container::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: url(/assets/quote.svg) center/cover;
+    position: absolute;
+    bottom: unset;
+    top: 12rem;
+    right: 50%;
+    z-index: 1;
+    opacity: 10%;
   }
 }
 
