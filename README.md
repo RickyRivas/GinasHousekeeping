@@ -1,2 +1,2 @@
 # Rivas-Component-Library
-Personal library of components. All made with html5, scss, and vanilla javascript.
+Made with Html5, SCSS, and Vanilla Javascript.
