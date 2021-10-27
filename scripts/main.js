@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-link"); 
+const navLinks = document.querySelectorAll(".nav-link");
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('is-active');
@@ -50,7 +50,7 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
         delay: 2500,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
@@ -59,6 +59,16 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
     },
 });
 var swiper = new Swiper(".testSwiper", {
@@ -77,5 +87,15 @@ var swiper = new Swiper(".testSwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+            1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
     },
 });
