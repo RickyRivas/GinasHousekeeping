@@ -36,10 +36,10 @@
             <div class='navlinks-overlay'></div>
             <ul class="nav-links">
                 <li class="nav-link"><a href="index.html">Home</a></li>
-                <li class="nav-link"><a href="#">Services</a></li>
-                <li class="nav-link"><a href="#">Gallery</a></li>
-                <li class="nav-link"><a href="#">Testimonials</a></li>
-                <li class="nav-link"><a href="#">Request Quote</a></li>
+                <li class="nav-link"><a href="#services">Services</a></li>
+                <li class="nav-link"><a href="#gallery">Gallery</a></li>
+                <li class="nav-link"><a href="#testimonials">Testimonials</a></li>
+                <li class="nav-link"><a href="#form">Request Quote</a></li>
             </ul>
 
             <button class="hamburger hamburger--squeeze" type="button" aria-label="Navigation Toggle"
@@ -59,14 +59,16 @@
                 <h1>Gina's Housekeeping</h1>
                 <p>Housecleaning and complimentary service for the Tulsa and Sorrounding Areas.</p>
                 <div class='btns'>
-                    <a class="btn btn-primary">Request a Quote</a>
-                    <a class="btn btn-primary">Give us a Call</a>
+                    <a href='#form' class="btn btn-primary">Request a Quote</a>
+                    <a href='tel:9185765780' class="btn btn-primary phone">Give us a Call
+                        <img src='assets/phone-call.svg' alt='' class=''>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- absolute form-->
-        <div class='form-container'>
-            <form name="contact" method="POST" data-netlify="true">
+        <div id='form-container'>
+            <form id='form' name="contact" method="POST" data-netlify="true">
                 <div class='form-heading'>
                     <h2>Request Quote</h2>
                 </div>
@@ -106,8 +108,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus, ullam sed repudiandae
                         aperiam dicta corporis ipsum laboriosam? Ab, nesciunt.</p>
                     <div class='btns'>
-                        <a class="btn btn-primary">Request a Quote</a>
-                        <a class="btn btn-primary">Services</a>
+                        <a href='#form' class="btn btn-primary">Request a Quote</a>
+                        <a href='#services' class="btn btn-primary">Services</a>
                     </div>
                 </div>
                 <div class='grid'>
@@ -152,7 +154,7 @@
                                 <p>Best Customer Service</p>
                             </li>
                         </ul>
-                        <a class='btn btn-primary'>Book Now</a>
+                        <a href='#form' class='btn btn-primary'>Book Now</a>
                     </div>
                     <!-- Item -->
                     <!-- Item -->
@@ -177,7 +179,7 @@
                                 <p>Best Customer Service</p>
                             </li>
                         </ul>
-                        <a class='btn btn-primary'>Book Now</a>
+                        <a href='#form' class='btn btn-primary'>Book Now</a>
                     </div>
                     <!-- Item -->
                     <!-- Item -->
@@ -202,7 +204,7 @@
                                 <p>Best Customer Service</p>
                             </li>
                         </ul>
-                        <a class='btn btn-primary'>Book Now</a>
+                        <a href='#form' class='btn btn-primary'>Book Now</a>
                     </div>
                     <!-- Item -->
                 </div>
@@ -320,7 +322,7 @@
         <section id='question'>
             <div class='container'>
                 <h2>Are You Ready For Your House To Be Cleaned?</h2>
-                <a href='' class='btn btn-primary'>Let's Get Started</a>
+                <a href='#form' class='btn btn-primary'>Let's Get Started</a>
             </div>
         </section>
         <!-- Question End -->
@@ -358,10 +360,10 @@
                 <h2>Page Links</h2>
                 <ul>
                     <li><a href='/'>Top</a></li>
-                    <li><a href='/'>Services</a></li>
-                    <li><a href='/'>Featured Works</a></li>
-                    <li><a href='/'>Testimonials</a></li>
-                    <li><a href='/'>Request a Quote</a></li>
+                    <li><a href='#services'>Services</a></li>
+                    <li><a href='#gallery'>Featured Works</a></li>
+                    <li><a href='#testimonials'>Testimonials</a></li>
+                    <li><a href='#form'>Request a Quote</a></li>
                 </ul>
             </div>
         </div>

@@ -1,8 +1,11 @@
 @media (min-width: 0em) {
-
+    .body-fixed {
+        position: fixed;
+    }
     // All sections will have an id
     #landing {
         height: 625px;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,16 +45,24 @@
                     justify-content: center;
                     align-items: center;
                 }
+                .phone {
+                    position: relative;
+                    img {
+                        position: absolute;
+                        width: 1rem;
+                        right: 1rem;
+                    }
+                }
             }
         }
     }
 
     // form container 
-    .form-container {
+    #form-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
 
         form {
             display: flex;

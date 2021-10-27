@@ -3,6 +3,7 @@ const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-link"); 
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('is-active');
@@ -15,6 +16,14 @@ navOverlay.addEventListener('click', () => {
     burger.classList.toggle('is-active');
     body.classList.toggle('body-fixed');
     navOverlay.classList.toggle('is-active');
+})
+navLinks.forEach(navLink => {
+    navLink.addEventListener('click', () => {
+        nav.classList.toggle('is-active');
+        burger.classList.toggle('is-active');
+        body.classList.toggle('body-fixed');
+        navOverlay.classList.toggle('is-active');
+    })
 })
 // // Color theme toggle
 // const themeToggle = document.querySelector('.theme-toggle');

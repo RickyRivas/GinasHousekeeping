@@ -141,9 +141,7 @@ html, body {
     text-decoration: none;
   }
   header nav .nav-links li a:hover {
-    color: #2d2d2d;
-    -webkit-transition: color .5s;
-    transition: color .5s;
+    opacity: .7;
   }
   header nav .nav-links li:nth-child(1) {
     margin-top: 3em;
@@ -909,8 +907,12 @@ body.dark-mode .theme-toggle {
 }
 
 @media (min-width: 0em) {
+  .body-fixed {
+    position: fixed;
+  }
   #landing {
     height: 625px;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -979,7 +981,15 @@ body.dark-mode .theme-toggle {
         -ms-flex-align: center;
             align-items: center;
   }
-  .form-container {
+  #landing .container .btns .phone {
+    position: relative;
+  }
+  #landing .container .btns .phone img {
+    position: absolute;
+    width: 1rem;
+    right: 1rem;
+  }
+  #form-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -989,9 +999,9 @@ body.dark-mode .theme-toggle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 100vw;
   }
-  .form-container form {
+  #form-container form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1013,7 +1023,7 @@ body.dark-mode .theme-toggle {
             transform: translateY(-80px);
     background-color: white;
   }
-  .form-container form .form-heading {
+  #form-container form .form-heading {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1028,20 +1038,20 @@ body.dark-mode .theme-toggle {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .form-container form label {
+  #form-container form label {
     width: 100%;
     margin-bottom: 0.5rem;
   }
-  .form-container form label p {
+  #form-container form label p {
     margin-bottom: 0.5rem;
   }
-  .form-container form label input[type='text'] {
+  #form-container form label input[type='text'] {
     width: 100%;
     border-radius: unset;
     padding: 0.5rem;
     border: 1px solid #e9ecef;
   }
-  .form-container form label textarea {
+  #form-container form label textarea {
     width: 100%;
     width: 100%;
     border-radius: unset;
@@ -1049,7 +1059,7 @@ body.dark-mode .theme-toggle {
     border: 1px solid #e9ecef;
     resize: none;
   }
-  .form-container form label select {
+  #form-container form label select {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #e9ecef;
