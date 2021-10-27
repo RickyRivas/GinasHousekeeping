@@ -1998,8 +1998,8 @@ body.dark-mode .theme-toggle {
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 1rem;
-    -webkit-transform: translateY(-80px);
-            transform: translateY(-80px);
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
     background-color: white;
     max-width: 1200px;
     margin: auto;
