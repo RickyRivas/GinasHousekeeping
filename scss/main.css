@@ -1658,8 +1658,6 @@ body.dark-mode .theme-toggle {
         -ms-flex-align: center;
             align-items: center;
     width: 100vw;
-    max-width: 1200px;
-    margin: auto;
   }
   #form-container form {
     display: -webkit-box;
@@ -1682,6 +1680,8 @@ body.dark-mode .theme-toggle {
     -webkit-transform: translateY(-80px);
             transform: translateY(-80px);
     background-color: white;
+    max-width: 1200px;
+    margin: auto;
   }
   #form-container form .form-heading {
     display: -webkit-box;
@@ -1715,6 +1715,7 @@ body.dark-mode .theme-toggle {
     border-radius: unset;
     padding: 0.5rem;
     border: 1px solid #e9ecef;
+    background-color: #f8f9fa;
   }
   #form-container form label textarea {
     width: 100%;
@@ -1738,7 +1739,7 @@ body.dark-mode .theme-toggle {
     cursor: inherit;
     line-height: inherit;
     color: black;
-    background-color: white;
+    background-color: #f8f9fa !important;
   }
   #intro {
     width: 100%;
@@ -1967,6 +1968,114 @@ body.dark-mode .theme-toggle {
     width: 1rem;
     right: 1rem;
   }
+  #form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+  }
+  #form-container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95%;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #form-container form .form-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: none;
+  }
+  #form-container form .message-label {
+    display: none;
+  }
+  #form-container form .btn {
+    white-space: nowrap;
+    margin: 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  #form-container form label {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+  #form-container form label p {
+    margin-bottom: 0.5rem;
+  }
+  #form-container form label input[type='text'] {
+    width: 100%;
+    border-radius: unset;
+    padding: 0.5rem;
+    border: 1px solid #e9ecef;
+  }
+  #form-container form label textarea {
+    width: 100%;
+    width: 100%;
+    border-radius: unset;
+    padding: 0.5rem;
+    border: 1px solid #e9ecef;
+    resize: none;
+  }
+  #form-container form label select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e9ecef;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    color: black;
+    background-color: white;
+  }
+  #gallery .container .heading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  #gallery .container .heading p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
   #intro {
     width: 100%;
     background-color: #f8f9fa;
@@ -2074,17 +2183,19 @@ body.dark-mode .theme-toggle {
   }
   #services .container .heading h2 {
     margin-bottom: 1rem;
+    font-size: 1.25rem;
   }
   #services .container .heading p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
   #services .container .services-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     place-items: center;
     grid-gap: 2rem;
     width: 100%;
@@ -2364,14 +2475,16 @@ body.dark-mode .theme-toggle {
   }
   #intro .container .content span {
     color: #52b6bc;
+    font-size: 1.2rem;
   }
   #intro .container .content h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.75rem;
+    font-size: 2.125rem;
   }
   #intro .container .content p {
     line-height: 1.5;
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
   }
   #intro .container .content .btns {
     display: -webkit-box;
@@ -2440,15 +2553,17 @@ body.dark-mode .theme-toggle {
   }
   #services .container .heading h2 {
     margin-bottom: 1rem;
+    font-size: 1.25rem;
   }
   #services .container .heading p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
   #services .container .services-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     place-items: center;
