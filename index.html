@@ -59,7 +59,7 @@
                 <h1>Gina's Housekeeping</h1>
                 <p>House Cleaning and Other Services for the Tulsa and Sorrounding Areas.</p>
                 <div class='btns'>
-                    <a href='#form' class="btn btn-primary">Request a Quote</a>
+                    <a href='#form' class="btn btn-primary">Request an Estimate</a>
                     <a href='tel:9185765780' class="btn btn-primary phone">Give us a Call
                         <img src='assets/phone-call.svg' alt='' class=''>
                     </a>
@@ -70,7 +70,7 @@
         <div id='form-container'>
             <form id='form' name="contact" method="POST" data-netlify="true">
                 <div class='form-heading'>
-                    <h2>Request Quote</h2>
+                    <h2>Request an Estimate</h2>
                 </div>
                 <label>
                     <p>Your Name* </p><input type="text" name="name" />
@@ -79,21 +79,25 @@
                     <p>Email Address* </p><input type="text" name="email" />
                 </label>
 
-                <label>
+                <label class='dropdown'>
                     <p>Choose Service*</p>
                     <select name="service-type">
-                        <option value="Standard">Standard Cleaning</option>
+                        <option value="Basic Cleaning">Standard Cleaning</option>
+                        <option value="Deep Cleaning">Deep Cleaning</option>
                         <option value="Organizing">Organizing</option>
+                        <option value="Laundry">Laundry</option>
                         <option value="Grocery Pickup">Grocery Pickup</option>
+                        <option value="Other Request">Other Request</option>
                     </select>
+                    <img src='assets/downward-arrow.svg' alt='down' class=''>
                 </label>
 
                 <label class='message-label'>
                     <p>Message: </p>
-                    <textarea type="text" name="message"></textarea>
+                    <textarea type="text" name="message" placeholder=""></textarea>
                 </label>
                 <p>
-                    <button class='btn-primary btn' type="submit">Request Quote</button>
+                    <button class='btn-primary btn' type="submit">Continue</button>
                 </p>
             </form>
         </div>
@@ -137,7 +141,7 @@
                         <div class='img-container'>
                             <img src='assets/img4.png' alt='' class=''>
                         </div>
-                        <h4>Standard Cleaning</h4>
+                        <h4>Basic Cleaning</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem sit possimus ducimus,
                             ipsum fugit!</p>
                         <ul>
@@ -247,11 +251,16 @@
                             <img src='assets/img5.png' alt='' class="">
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
                 <!-- Swiper End -->
+                <div class='controller'>
+                    <div class='item swiper-prev-gal'>
+                        <img src='assets/left.svg' alt='' class=''>
+                    </div>
+                    <div class='item swiper-next-gal'>
+                        <img src='assets/right.svg' alt='' class=''>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Gallery End -->
@@ -310,11 +319,16 @@
                             <p>- Belle Thompson | Tulsa, Ok</p>
                         </div>
                     </div>
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination"></div>
                 </div>
                 <!-- Swiper End -->
+                <div class='controller'>
+                    <div class='item swiper-prev-test'>
+                        <img src='assets/left.svg' alt='' class=''>
+                    </div>
+                    <div class='item swiper-next-test'>
+                        <img src='assets/right.svg' alt='' class=''>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Testimonials End -->
@@ -332,45 +346,70 @@
     <footer>
         <div class='container'>
             <div class='col'>
-                <h2>Gina's Housekeeping</h2>
-                <p>Based in Tulsa, Oklahoma, Gina's Housekeeping offers affordable housekeeping and complimentary
-                    services. Make an appointment today!</p>
+                <h2>Gina's Housekeeping and Multi-Services</h2>
+                <p>Our mission is to provide exceptional cleaning and other home services for an affordable price so
+                    that our clients can be worry-free and get their time back. </p>
             </div>
             <div class='col contact'>
                 <h2>Contact us</h2>
                 <ul>
-                    <li><a href="mailto:ginasmultiservices@gmail.com">GinasMultiServices@gmail.com</a></li>
-                    <li><a href='tel:9185765780'>(918) 576-5780</a></li>
                     <li>
+                        <img src='assets/placeholder.svg'>
+                        <p>Tulsa, Owasso, and Jenks are the areas we
+                            currently serve. Thank you for understanding.</p>
+                    </li>
+                    <li>
+                        <img src='/assets/phone-call-f.svg'>
+                        <a href="tel:9185682448">(918)-568-2448</a>
+                    </li>
+                    <li>
+                        <img src='assets/email.svg'>
+                        <a href="mailto:ginasmultiservices@gmail.com">GinasMultiServices@gmail.com</a>
+                    </li>
+                    <li>
+                        <img src='assets/feedback.svg'>
                         <a
-                            href='https://docs.google.com/forms/d/e/1FAIpQLSdbyFi5h_xAVKr89I7wSUDT-JgqNeE94N8mGtNjSuZbx_uRdA/viewform?usp=sf_link'>
-                            Site Feedback
-                        </a>
+                            href='https://docs.google.com/forms/d/e/1FAIpQLSdbyFi5h_xAVKr89I7wSUDT-JgqNeE94N8mGtNjSuZbx_uRdA/viewform?usp=sf_link'>Click
+                            to give website feedback</a>
                     </li>
                 </ul>
             </div>
-            <div class='col'>
-                <h2>Social Media</h2>
-                <div class='social-media'>
-                    <a class='flex' href='https://www.facebook.com/GinasMultiServices'><img src='assets/facebook.svg'
-                            class='standard-icon' alt='icon'>Facebook</a>
-                </div>
+            <div class='col contact'>
+                <h2>Business Hours</h2>
+                <ul class='business-hours'>
+                    <li>
+                        <p>Calls made outside
+                            business hours will recieve a call back the next business day. Thank you!</p>
+                    </li>
+                    <li>
+                        <p>Monday-Friday:</p>
+                        <p>9am to 5pm</p>
+                    </li>
+                    <li>
+                        <p>Saturday:</p>
+                        <p>Closed</p>
+                    </li>
+                    <li>
+                        <p>Sunday:</p>
+                        <p>Closed</p>
+                    </li>
+                </ul>
             </div>
             <div class='col contact'>
-                <h2>Page Links</h2>
+                <h2>Website Links</h2>
                 <ul>
-                    <li><a href='/'>Top</a></li>
-                    <li><a href='#services'>Services</a></li>
-                    <li><a href='#gallery'>Featured Works</a></li>
+                    <li><a href='#form'>Request Quote</a></li>
+                    <li><a href='#services'>Our Services</a></li>
+                    <li><a href='#gallery'>Our Gallery</a></li>
                     <li><a href='#testimonials'>Testimonials</a></li>
-                    <li><a href='#form'>Request a Quote</a></li>
+                    <li><a href='#landing'>Top of page</a></li>
                 </ul>
             </div>
         </div>
         <div class='site-credit'>
             <!-- <img src='assets/RLOGO1-01.svg' class='' alt=''> -->
-            <p>&copy 2021 Gina's Housekeeping | All Rights Reserved |<br> Powered by R Web Designs
-            </p>
+            <p>&copy 2021 East Side Blends | All Rights Reserved | Powered by <a href='https://www.rivaswebdesigns.com/'
+                    class='credit'>R Web Designs</a></p>
         </div>
     </footer>
     <!-- Footer -->

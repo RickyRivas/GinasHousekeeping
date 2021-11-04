@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-links li");
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('is-active');
@@ -17,12 +17,13 @@ navOverlay.addEventListener('click', () => {
     body.classList.toggle('body-fixed');
     navOverlay.classList.toggle('is-active');
 })
-navLinks.forEach(navLink => {
+navLinks.forEach((navLink, index) => {
     navLink.addEventListener('click', () => {
-        nav.classList.toggle('is-active');
-        burger.classList.toggle('is-active');
-        body.classList.toggle('body-fixed');
-        navOverlay.classList.toggle('is-active');
+        nav.classList.remove('is-active');
+        burger.classList.remove('is-active');
+        body.classList.remove('body-fixed');
+        navOverlay.classList.remove('is-active');
+        console.log(index)
     })
 })
 // // Color theme toggle
@@ -57,8 +58,8 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-next-gal",
+        prevEl: ".swiper-prev-gal",
     },
     breakpoints: {
         768: {
@@ -85,8 +86,8 @@ var swiper = new Swiper(".testSwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-next-test",
+        prevEl: ".swiper-prev-test",
     },
     breakpoints: {
         768: {

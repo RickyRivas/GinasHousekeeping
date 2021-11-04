@@ -88,8 +88,10 @@
           & a {
             color: white;
             text-decoration: none;
+
             &:hover {
               opacity: .7;
+              transition: .5s ease-in-out;
             }
           }
 
@@ -317,30 +319,50 @@
 
         & li {
           opacity: 1;
-          padding: .5em;
           width: max-content;
           font-size: $font-weight-base * 2;
+          padding: 0;
 
           & a {
             color: White;
             text-decoration: none;
+            padding: 10px 30px;
           }
-
-
         }
 
         & li:nth-child(1) {
           margin-top: 0em;
           border-bottom: none;
         }
-          & li:nth-child(5){
+
+        & li:nth-child(5) {
           white-space: nowrap;
           background-color: $primary;
-          padding: $padding-sm;
+          padding: 0;
         }
 
         &.is-active {
+          transform: unset;
+          display: none;
+        }
+      }
+
+      .navlinks-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(100%);
+        background: rgba(0, 0, 0, .4);
+        z-index: 99;
+        display: none;
+
+        &.is-active {
           transform: translate(0%);
+          animation: fadeIn 0.5s ease-in;
+          display: none;
         }
       }
     }
@@ -389,7 +411,7 @@
       max-width: 1200px;
       margin: auto;
 
-       .logo-wrapper {
+      .logo-wrapper {
         position: absolute;
         left: 2rem;
         top: 1rem;
@@ -407,6 +429,7 @@
           display: none;
         }
       }
+
       .nav-links {
         margin: 0;
         position: relative;
@@ -426,17 +449,15 @@
 
         & li {
           opacity: 1;
-          padding: .5em;
-          text-align: right;
-          width: 90%;
-          font-weight: unset;
+          width: 100%;
           display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
+          justify-content: center;
+          align-items: center;
 
           & a {
             color: white;
             text-decoration: none;
+            padding: 20px;
           }
 
         }
@@ -444,10 +465,11 @@
         & li:nth-child(1) {
           margin-top: 0em;
         }
-        & li:nth-child(5){
+
+        & li:nth-child(5) {
           white-space: nowrap;
           background-color: $primary;
-          padding: $padding-sm;
+          padding: 0;
         }
 
         &.is-active {
