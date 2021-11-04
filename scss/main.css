@@ -880,7 +880,7 @@ html, body {
     font-size: 14px;
   }
   footer .site-credit a {
-    color: #2d2d2d;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -1246,6 +1246,9 @@ body.dark-mode .theme-toggle {
     width: 100%;
     margin-bottom: 2rem;
   }
+  #services .container .heading span {
+    color: #52b6bc;
+  }
   #services .container .heading h2 {
     margin-bottom: 1rem;
   }
@@ -1404,6 +1407,9 @@ body.dark-mode .theme-toggle {
   #gallery .container .heading {
     width: 100%;
   }
+  #gallery .container .heading span {
+    color: #52b6bc;
+  }
   #gallery .container .heading h2 {
     margin-bottom: 0.5rem;
   }
@@ -1529,6 +1535,9 @@ body.dark-mode .theme-toggle {
   }
   #testimonials .container .heading {
     width: 100%;
+  }
+  #testimonials .container .heading span {
+    color: #52b6bc;
   }
   #testimonials .container .heading h2 {
     margin-bottom: 0.5rem;
@@ -2236,12 +2245,17 @@ body.dark-mode .theme-toggle {
     opacity: 20%;
     display: block;
   }
-  #gallery .container .heading h2 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+  #gallery .container {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
-  #gallery .container .heading p {
-    margin-bottom: 1rem;
+  #gallery .container span {
+    font-size: 1.2rem;
+  }
+  #gallery .container h2 {
+    font-size: 2.125rem;
+  }
+  #gallery .container p {
     font-size: 1.1rem;
   }
   #intro {
@@ -2252,7 +2266,8 @@ body.dark-mode .theme-toggle {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -2335,12 +2350,25 @@ body.dark-mode .theme-toggle {
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
+  #testimonials .container {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+  #testimonials .container .heading span {
+    font-size: 1.2rem;
+  }
+  #testimonials .container .heading h2 {
+    font-size: 2.125rem;
+  }
+  #testimonials .container .heading p {
+    font-size: 1.1rem;
+  }
   #services {
     width: 100%;
   }
   #services .container {
-    padding: 2rem 1rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -2349,12 +2377,13 @@ body.dark-mode .theme-toggle {
     width: 100%;
     margin-bottom: 2rem;
   }
+  #services .container .heading span {
+    font-size: 1.2rem;
+  }
   #services .container .heading h2 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 2.125rem;
   }
   #services .container .heading p {
-    margin-bottom: 1rem;
     font-size: 1.1rem;
   }
   #services .container .services-grid {
@@ -2719,9 +2748,13 @@ body.dark-mode .theme-toggle {
     width: 100%;
     margin-bottom: 2rem;
   }
+  #services .container .heading span {
+    color: #52b6bc;
+    font-size: 1.2rem;
+  }
   #services .container .heading h2 {
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 2.125rem;
   }
   #services .container .heading p {
     margin-bottom: 1rem;
@@ -2801,6 +2834,18 @@ body.dark-mode .theme-toggle {
   }
   #services .container .services-grid .item a {
     margin: 0;
+  }
+  #testimonials .container .heading span {
+    font-size: 1.2rem;
+  }
+  #testimonials .container .heading h2 {
+    font-size: 2.125rem;
+  }
+  #gallery .container .heading h2 {
+    font-size: 2.125rem;
+  }
+  #gallery .container .heading span {
+    font-size: 1.2rem;
   }
   #slogan {
     width: 100%;
